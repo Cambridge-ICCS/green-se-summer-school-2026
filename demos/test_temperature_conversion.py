@@ -7,7 +7,7 @@ implementations and tests contain three errors.
 
 Exercises:
 
-1. Run `pytest --verbose test/test_temperature_conversion.py` to see the failures.
+1. Run `pytest --verbose demos/test_temperature_conversion.py` to see the failures.
 
 2. Track down each issue, running `pytest --verbose --last-failed` each time you make a
    fix. You should see that fewer tests are run each time.
