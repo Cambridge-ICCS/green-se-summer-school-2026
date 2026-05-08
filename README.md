@@ -27,5 +27,6 @@ Having done so, install the Python dependencies in the
 ```sh
 pip install -r requirements.txt
 ```
-This will install [CodeCarbon](https://codecarbon.io/) and the
-[Carbon Aware Task Scheduler (CATS)](https://cats.readthedocs.io).
+This will install [CodeCarbon](https://codecarbon.io/), the
+[Carbon Aware Task Scheduler (CATS)](https://cats.readthedocs.io), and
+additional packages to support plotting with CATS.

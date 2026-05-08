@@ -1,2 +1,3 @@
-climate-aware-task-scheduler
+climate-aware-task-scheduler[plots]
 codecarbon
+pyqt6
