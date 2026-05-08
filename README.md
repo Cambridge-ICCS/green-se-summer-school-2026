@@ -10,9 +10,24 @@
 [2026 Summer School](https://iccs.cam.ac.uk/events/institute-computing-climate-science-annual-summer-school-2026)
 of the
 [Institute of Computing for Climate Science (ICCS)](https://iccs.cam.ac.uk) by
-[Joe Wallwork](https://joewallwork.com) and
-[Surbhi Goel](https://github.com/surbhigoel77).*
+[Joe Wallwork](https://joewallwork.com),
+[Surbhi Goel](https://github.com/surbhigoel77), and
+[David Kamm](https://github.com/vopikamm)*
 
 ## Setup
 
-*[Work in progress]*
+The course will involve some Python examples. To manage the dependencies, first
+create a Python virtual environment and then activate it. For example:
+```sh
+python3 -m venv green-se
+source green-se/bin/activate
+```
+Having done so, install the Python dependencies in the
+[requirements.txt](requirements.txt) file with
+```sh
+pip install -r requirements.txt
+```
+This will install [CodeCarbon](https://codecarbon.io/), the
+[Carbon Aware Task Scheduler (CATS)](https://cats.readthedocs.io), the
+[PyTest](https://docs.pytest.org/en/stable/) testing framework, and additional
+packages to support plotting with CATS.
