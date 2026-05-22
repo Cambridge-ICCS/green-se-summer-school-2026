@@ -3,8 +3,8 @@
 #  Green Software Engineering Practices
 
 This repository contains documentation, resources, and code for the 'Green Software
-Engineering Practices' session designed and delivered by Joe Wallwork
-(@joewallwork), Surbhi Goel (@surbhigoel) and David Kamm (@vopikamm) of
+Engineering Practices' session designed and delivered by [Joe Wallwork](https://joewallwork.com),
+[Surbhi Goel](https://github.com/surbhigoel) and [David Kamm](https://github.com/vopikamm) of
 [ICCS](https://github.com/Cambridge-ICCS).
 All materials, including slides and videos, are available such that individuals
 can cover the course in their own time.
@@ -44,10 +44,9 @@ engineering practices, including those related to
 ## Teaching Material
 
 ### Slides
-TODO (right now google docs)
 
-The slides for this workshop can be viewed here:
-[Slides](https://docs.google.com/presentation/d/1msHjFMiHlV20jqhZVixFkhG3L0sDddPFQagMCMDyaII/edit?slide=id.p#slide=id.p)
+<!-- TODO: Add slides -->
+The slides for this workshop can be found at [slides.pdf](slides.pdf)
 
 ### Exercises
 The exercises for the course can be found in the [demos](demos/) directory.
@@ -82,8 +81,9 @@ of the ecosystem. This includes:
 - basic unit testing using
   [pytest](https://docs.pytest.org/en/stable/)
 
-#### HPC
-TODO?
+#### HPC and AI
+
+General awareness of HPC and GenAI will be useful but not necessary. This could be achieved by attending the summer school [HPC](https://github.com/Cambridge-ICCS/hpc-summer-school) and/or [GenAI](https://github.com/Cambridge-ICCS/GenAI-teaching) courses. Aspects of Green HPC and Green AI will be discussed in the course but technical knowledge will not be required.
 
 ### Preparation
 
@@ -124,20 +124,19 @@ This will allow you to push your changes and progress from the workshop back up
 to your fork for future reference.
 
 ### 2. Create a virtual environment
-TODO
 
 Before installing any Python packages it is important to first create a Python
 virtual environment.
 This provides an insulated environment inside which we can install Python
 packages without polluting the operating system's Python environment.
 ```
-python3 -m venv .venv
+python3 -m venv green-venv
 ```
-This will create a directory called `.venv/` containing software for the
+This will create a directory called `green-venv/` containing software for the
 virtual environment.
 To activate the environment run:
 ```
-source .venv/bin/activate
+source green-venv/bin/activate
 ```
 You can now work on python from within this isolated environment, installing
 packages as you wish without disturbing your base system environment.
@@ -151,7 +150,6 @@ to deactivate the venv and return to the system python environment.
 You can always boot back into the venv as you left it by running the activate command again.
 
 ### 3. Install dependencies
-TODO
 
 It is now time to install the dependencies for our code, for example `pytest`.
 The project has been packaged with a [`pyproject.toml`](pyproject.toml) so can
