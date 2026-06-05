@@ -19,7 +19,6 @@ can cover the course in their own time.
 - [License information](#license)
 - [Contribution Guidelines and Support](#contribution-guidelines-and-support)
 
-
 ## Learning Objectives
 
 The key learning objective from this workshop is to equip participants with
@@ -151,15 +150,17 @@ You can always boot back into the venv as you left it by running the activate co
 
 ### 3. Install dependencies
 
-It is now time to install the dependencies for our code, for example `pytest`.
-The project has been packaged with a [`pyproject.toml`](pyproject.toml) so can
-be installed in one go.
-From within the root directory in a active virtual environment run:
+It is now time to install the dependencies for our code, including
+[CodeCarbon](https://codecarbon.io/), the
+[Carbon Aware Task Scheduler (CATS)](https://cats.readthedocs.io), the
+[PyTest](https://docs.pytest.org/en/stable/) testing framework, and additional
+packages to support plotting with CATS.
+
+With your virtual environment active, install the Python dependencies in the
+[requirements.txt](requirements.txt) file with
+```sh
+pip install -r requirements.txt
 ```
-pip install .
-```
-This will download the relevant dependencies into the venv as well as setting
-up the datasets that we will be using in the course.
 
 ## License
 
