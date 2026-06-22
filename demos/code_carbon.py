@@ -46,4 +46,4 @@ np.dot(arr1, arr2)
 emissions_np = tracker.stop()
 print(f"NumPy emissions:       {emissions_np:.2e} kg CO₂")
 
-print(f"Ratio: {emissions_py / emissions_np:.0f}x more emissions for pure Python")
+print(f"Ratio: {emissions_py / emissions_np:.2f}x higher emissions for pure Python")
