@@ -15,13 +15,28 @@ Hint: Running with `python3 demos/code_carbon.py 2>codecarbon.log` will print
 
 3. Inspect the log file and the `emissions.csv` file that is produced.
 """
+import random
+import numpy as np
 from codecarbon import EmissionsTracker
 
-tracker = EmissionsTracker()
+SIZE = 10_000_000
+list1 = [random.random() for _ in range(SIZE)]
+list2 = [random.random() for _ in range(SIZE)]
+arr1 = np.array(list1)
+arr2 = np.array(list2)
+
+# Tracking Pure Python dot product
+tracker = EmissionsTracker(log_level="error")
 tracker.start()
+sum(a * b for a, b in zip(list1, list2))
+emissions_py = tracker.stop()
+print(f"Pure Python emissions: {emissions_py:.2e} kg CO₂")
 
-# TODO: Your code here!
+# Tracking NumPy dot product
+tracker = EmissionsTracker(log_level="error")
+tracker.start()
+np.dot(arr1, arr2)
+emissions_np = tracker.stop()
+print(f"NumPy emissions:       {emissions_np:.2e} kg CO₂")
 
-emissions = tracker.stop()
-
-print(f"Emissions: {emissions} kg CO₂")
+print(f"Ratio: {emissions_py / emissions_np:.0f}x more emissions for pure Python")
