@@ -1,4 +1,5 @@
 climate-aware-task-scheduler[plots]
 codecarbon
+numpy
 pytest
 pyqt6
