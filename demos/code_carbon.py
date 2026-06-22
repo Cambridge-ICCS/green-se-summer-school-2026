@@ -14,6 +14,13 @@ Hint: Running with `python3 demos/code_carbon.py 2>codecarbon.log` will print
       any print statements.
 
 3. Inspect the log file and the `emissions.csv` file that is produced.
+
+4. Launch the CodeCarbon dashboard to explore the results visually:
+
+       carbonboard --filepath="emissions.csv" --port=3333
+
+   Then open http://localhost:3333 in your browser. The dashboard shows carbon
+   equivalents (e.g. km driven, TV hours) and a global map of energy mix by region.
 """
 import random
 import numpy as np
