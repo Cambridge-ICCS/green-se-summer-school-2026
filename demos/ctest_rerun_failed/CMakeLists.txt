@@ -1,3 +1,11 @@
+# Build system for CTest demo
+#
+# Compile with CMake as follows:
+#
+#    mkdir build
+#    cd build
+#    cmake ..
+#    cmake --build .
 cmake_minimum_required(VERSION 3.10)
 project(CTestRerunFailed)
 
