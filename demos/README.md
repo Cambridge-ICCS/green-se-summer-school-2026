@@ -43,7 +43,7 @@ involve code found in this subdirectory.
 ## 4a. Pytest
 
 1. Take a look at [pytest_last_failed.py](pytest_last_failed.py).
-2. Run `pytest --verbose pytest_last_failed.py` and inspect the failures.
+2. Run `pytest --verbose` and inspect the failures.
 3. Track down each issue, running `pytest --verbose --last-failed` each time you
    make a fix. You should see that fewer tests are run each time.
 
