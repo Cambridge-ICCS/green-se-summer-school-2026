@@ -44,7 +44,6 @@ engineering practices, including those related to
 
 ### Slides
 
-<!-- TODO: Add slides -->
 The slides for this workshop can be found at [slides.pdf](slides.pdf)
 
 ### Exercises
