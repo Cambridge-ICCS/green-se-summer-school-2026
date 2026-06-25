@@ -48,14 +48,10 @@ The slides for this workshop can be found at [slides.pdf](slides.pdf)
 
 ### Exercises
 The exercises for the course can be found in the [demos](demos/) directory.
-These take the form of erroneous Python scripts for unit testing, designed to
-demonstrate the practical use of `pytest --last-failed`.
-
-### Worked Solutions
-Worked solutions for all of the exercises can be found in the
-[TODO](worked-solutions/) directory.
-These are for recapping after the course in case you missed anything, and
-contain example solutions.
+These take the form of:
+* Demonstrating how to use [CodeCarbon](https://codecarbon.io/) in Python.
+* Erroneous code for unit testing, designed to demonstrate the practical use of
+  `pytest --last-failed` and `ctest --rerun-failed`.
 
 
 ## Preparation and prerequisites
@@ -98,6 +94,7 @@ following:
   [Windows Terminal (windows only)](https://learn.microsoft.com/en-us/windows/terminal/),
   [iTerm (mac only)](https://iterm2.com/)
 - A Python 3 installation
+- [CMake](https://cmake.org/) (optional)
 
 If you require assistance or further information with any of these please reach
 out to us before the session.
@@ -160,6 +157,9 @@ With your virtual environment active, install the Python dependencies in the
 ```sh
 pip install -r requirements.txt
 ```
+
+Optionally, install [CMake](https://cmake.org/) by following the instructions on
+the [download page](https://cmake.org/download/).
 
 ## License
 
