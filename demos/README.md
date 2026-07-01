@@ -32,6 +32,16 @@ involve code found in this subdirectory.
    comparing the energy usage of different models participating in CMIP.
 3. Plug in numbers for different models
 
+You can find one example using the numbers reported for the IPSL climate model in [GreenAlgorithms_results_IPSL.csv](GreenAlgorithms/GreenAlgorithms_results_IPSL.csv).
+The given values were taken from the corresponding tables in the referenced paper as follows:
+
+- **Number of CPU cores:** `Paral` (Table 3)
+- **CPU model:** `CPU family` (Table 4)
+- **Available memory:** `Memory per core` (Table 4)
+- **Power Usage Effectiveness (PUE):** `PUE` (Table 4)
+
+The paper does not report the CPU utilization (real usage factor), so no value could be extracted for that parameter.
+
 ## 3. Climate-Aware Task Scheduler
 
 1. Install the [CATS](https://github.com/GreenScheduler/cats) Python package.
